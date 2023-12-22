@@ -18,22 +18,6 @@ pub struct HostConfig {
     identity_file: Option<std::path::PathBuf>,
 }
 
-impl fmt::Display for HostConfig {
-    fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
-        write!(
-            f,
-            "Host {}\n  Hostname {}\n  User {}\n  {}",
-            self.name,
-            self.hostname,
-            self.user,
-            match self.identity_file.clone() {
-                Some(file) => format!("Identity file {}\n", file.display()),
-                None => "".to_owned(),
-            },
-        )
-    }
-}
-
 #[allow(dead_code)]
 impl HostConfig {
     pub fn builder() -> HostConfigBuilder {
@@ -68,5 +52,21 @@ impl HostConfig {
 
     pub fn get_identity_file(&self) -> Option<std::path::PathBuf> {
         self.identity_file.clone()
+    }
+}
+
+impl fmt::Display for HostConfig {
+    fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
+        write!(
+            f,
+            "Host {}\n  Hostname {}\n  User {}\n  {}",
+            self.name,
+            self.hostname,
+            self.user,
+            match self.identity_file.clone() {
+                Some(file) => format!("IdentityFile {}\n", file.display()),
+                None => "".to_owned(),
+            },
+        )
     }
 }
