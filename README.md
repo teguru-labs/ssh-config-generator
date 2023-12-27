@@ -18,6 +18,15 @@ wget https://github.com/devsuccess101/ssh-config-generator/releases/download/lat
 ssh-config --version
 ```
 
+### Build from source
+
+```bash
+git clone git@github.com:devsuccess101/ssh-config-generator.git
+cargo build --release --bin ssh-config
+```
+
+The output file is `./target/release/ssh-config`.
+
 ## Usage
 
 ```bash
@@ -32,13 +41,6 @@ Options:
   -o, --output <OUTPUT>                Output file
       --help                           Print help
   -V, --version                        Print version
-```
-
-### Build from source
-
-```bash
-git clone git@github.com:devsuccess101/ssh-config-generator.git
-cargo build --release --bin ssh-config
 ```
 
 ### Generate SSH Config
