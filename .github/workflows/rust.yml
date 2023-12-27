@@ -16,3 +16,8 @@ jobs:
     - uses: actions/checkout@v4
     - name: Run tests
       run: cargo test
+    - name: Cache
+      uses: actions/cache@v3.3.2
+      with:
+        path: target
+        key: main-target-dir
