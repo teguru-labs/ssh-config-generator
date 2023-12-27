@@ -7,13 +7,13 @@ Please download the binary file from [the release page](https://github.com/devsu
 For example:
 
 ```bash
-wget https://github.com/devsuccess101/ssh-config-generator/releases/download/v0.1.0/scg \
-    && sudo chmod +x scg \
-    && sudo mv scg /usr/local/bin
+wget https://github.com/devsuccess101/ssh-config-generator/releases/download/latest/ssh-config \
+    && sudo chmod +x ssh-config \
+    && sudo mv ssh-config /usr/local/bin
 ```
 
 ```bash
-scg --version
+ssh-config --version
 ```
 
 ## Usage
@@ -21,7 +21,7 @@ scg --version
 ```bash
 SSH Config Generator
 
-Usage: scg [OPTIONS] --user <USER> --host <HOST>
+Usage: ssh-config [OPTIONS] --user <USER> --host <HOST>
 
 Options:
   -u, --user <USER>                    SSH user
@@ -35,13 +35,13 @@ Options:
 ### Generate SSH Config
 
 ```bash
-scg -u user -i ~/.ssh/id_rsa -h 127.0.0.1 -h 127.0.0.2
+ssh-config -u user -i ~/.ssh/id_rsa -h 127.0.0.1 -h 127.0.0.2
 ```
 
 Output:
 
 ```bash
-# generated via `scg` - SSH Config Generator:
+# generated via `ssh-config` - SSH Config Generator:
 Host node1
   Hostname 127.0.0.1
   User user
