@@ -20,4 +20,4 @@ jobs:
       uses: actions/cache@v3.3.2
       with:
         path: target
-        key: main-target-dir
+        key: target-dir
