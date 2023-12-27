@@ -52,7 +52,7 @@ fn main() -> Result<()> {
         fs::write(output_file.clone(), format!("{}", config))
             .with_context(|| format!("could not write file `{}`", output_file.display()))?;
     } else {
-        println!("# generated via `scg` - SSH Config Generator:");
+        println!("# generated via `ssh-config` - SSH Config Generator:");
         println!("{}", config);
     }
 
