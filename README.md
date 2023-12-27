@@ -2,6 +2,8 @@
 
 ## Install
 
+### Binary file
+
 Please download the binary file from [the release page](https://github.com/devsuccess101/ssh-config-generator/releases/latest).
 
 For example:
@@ -30,6 +32,13 @@ Options:
   -o, --output <OUTPUT>                Output file
       --help                           Print help
   -V, --version                        Print version
+```
+
+### Build from source
+
+```bash
+git clone git@github.com:devsuccess101/ssh-config-generator.git
+cargo build --release --bin ssh-config
 ```
 
 ### Generate SSH Config
