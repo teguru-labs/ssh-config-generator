@@ -1,6 +1,6 @@
 # SSH Config Generator
 
-## Install
+## Installation
 
 ### Binary file
 
