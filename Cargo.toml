@@ -8,7 +8,7 @@ name = "ssh-config"
 path = "src/main.rs"
 
 [dependencies]
-anyhow = "1.0.80"
+anyhow = "1.0.81"
 clap = { version = "4.5.2", features = ["derive"] }
 env_logger = "0.11.3"
 log = { version = "0.4.21", features = ["std", "serde"] }
