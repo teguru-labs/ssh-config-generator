@@ -6,13 +6,23 @@
 
 Please download the binary file from [the release page](https://github.com/teguru-labs/ssh-config-generator/releases/latest).
 
-For example:
+**MacOS:**
 
 ```bash
-wget -O ssh-config https://github.com/teguru-labs/ssh-config-generator/releases/download/v0.1.0/ssh-config_aarch64-apple-darwin \
+wget https://github.com/teguru-labs/ssh-config-generator/releases/download/v0.1.0/ssh-config_aarch64-apple-darwin -O ssh-config \
     && sudo chmod +x ssh-config \
     && sudo mv ssh-config /usr/local/bin
 ```
+
+**Linux:**
+
+```bash
+wget https://github.com/teguru-labs/ssh-config-generator/releases/download/v0.1.0/ssh-config_x86_64-unknown-linux-gnu -O ssh-config \
+    && sudo chmod +x ssh-config \
+    && sudo mv ssh-config /usr/local/bin
+```
+
+**Verification:**
 
 ```bash
 ssh-config --version
