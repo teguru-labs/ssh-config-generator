@@ -9,7 +9,7 @@ Please download the binary file from [the release page](https://github.com/tegur
 For example:
 
 ```bash
-wget https://github.com/teguru-labs/ssh-config-generator/releases/download/latest/ssh-config \
+wget https://github.com/teguru-labs/ssh-config-generator/releases/download/v0.1.0/ssh-config_aarch64-apple-darwin \
     && sudo chmod +x ssh-config \
     && sudo mv ssh-config /usr/local/bin
 ```
