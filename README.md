@@ -4,12 +4,12 @@
 
 ### Binary file
 
-Please download the binary file from [the release page](https://github.com/devsuccess101/ssh-config-generator/releases/latest).
+Please download the binary file from [the release page](https://github.com/teguru-labs/ssh-config-generator/releases/latest).
 
 For example:
 
 ```bash
-wget https://github.com/devsuccess101/ssh-config-generator/releases/download/latest/ssh-config \
+wget https://github.com/teguru-labs/ssh-config-generator/releases/download/latest/ssh-config \
     && sudo chmod +x ssh-config \
     && sudo mv ssh-config /usr/local/bin
 ```
@@ -21,7 +21,7 @@ ssh-config --version
 ### Build from source
 
 ```bash
-git clone git@github.com:devsuccess101/ssh-config-generator.git
+git clone git@github.com:teguru-labs/ssh-config-generator.git
 cargo build --release --bin ssh-config
 ```
 
